@@ -31,6 +31,7 @@ def dosomething(kind,title,df,features,what,best_params={}):
         X = df[list(X.columns[something_selected_features])]
         y = df[what]
     else:
+        print('The selected features are:', features)
         something = estimator
         
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=random_state_value)
