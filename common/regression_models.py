@@ -1,6 +1,7 @@
 
 from print_more_stuff import print_more_stuff
 
+from sklearn.ensemble import AdaBoostRegressor
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.feature_selection import SequentialFeatureSelector, RFE
 from sklearn.model_selection import train_test_split, GridSearchCV
@@ -13,6 +14,8 @@ def dosomething(kind,title,df,features,what,best_params={}):
     match kind:
         case "Decision Tree":
             estimator = DecisionTreeRegressor(**best_params)
+        case "Ada Boost":
+            estimator = AdaBoostRegressor(**best_params)
     
     X = df[features]
     y = df[what]
