@@ -1,26 +1,35 @@
 
 from print_more_stuff import print_more_stuff
 
-from sklearn.ensemble import AdaBoostRegressor
+from sklearn.ensemble import AdaBoostRegressor, GradientBoostingRegressor, HistGradientBoostingRegressor, RandomForestRegressor
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.feature_selection import SequentialFeatureSelector, RFE
 from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.linear_model import LinearRegression
 
 def dosomething(kind,title,df,features,what,best_params={}):
 
     num_features_to_select = len(features)-1
     random_state_value = 42
     
+    estimator = LinearRegression()
+    
     match kind:
         case "Decision Tree":
             estimator = DecisionTreeRegressor(**best_params)
         case "Ada Boost":
             estimator = AdaBoostRegressor(**best_params)
+        case "Gradient Boosting":
+            estimator = GradientBoostingRegressor(**best_params)
+        case "Hist Gradient Boosting":
+            estimator = HistGradientBoostingRegressor(**best_params)
+        case "Random Forest":
+            estimator = RandomForestRegressor(**best_params)
     
     X = df[features]
     y = df[what]
     
-    if title.find("Best Params") == -1:
+    if title != "" and title.find("Best Params") == -1:
         match title:
             case "Recursive Feature Elimination":
                 something = RFE(estimator, n_features_to_select=num_features_to_select)
