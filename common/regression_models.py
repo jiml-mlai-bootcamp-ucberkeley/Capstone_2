@@ -10,6 +10,8 @@ from sklearn.linear_model import LinearRegression, Lasso, Ridge
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.pipeline import Pipeline
 
+# Create models and feature selections in one file instead of each Notebook
+
 def dosomething(kind,title,df,features,what,best_params={}):
 
     num_features_to_select = len(features)-1

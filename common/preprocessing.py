@@ -2,6 +2,7 @@
 import pandas as pd
 from sklearn.preprocessing import normalize, MinMaxScaler
 
+# Manually normalize the data using the mean and standard deviation
 def mean_and_std(what):
     data = what["data"]
     features_a = what["features_a"]
@@ -21,6 +22,7 @@ def mean_and_std(what):
 
     return normalized_df
 
+# Normalize the data using sklearn normalize
 def normalizer(what):
     data = what["data"]
     features_a = what["features_a"]
@@ -38,6 +40,7 @@ def normalizer(what):
         
     return normalized_df
 
+# Normalize the data using sklearn scaleminmax
 def scaleminmax(what):
     data = what["data"]
     features_a = what["features_a"]

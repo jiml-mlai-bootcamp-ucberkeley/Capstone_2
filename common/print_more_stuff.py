@@ -1,7 +1,7 @@
 
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score, explained_variance_score
 
-
+# format and print the results from the modeling and predictions
 def print_more_stuff(title, y_param, predict_param, gscv):
     
     results_dict = {"model":"", "explained variance score":0,"mae score":0,"mse score":0,"r2 score":0, "mean fit time":0}
