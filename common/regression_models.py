@@ -12,7 +12,7 @@ from sklearn.pipeline import Pipeline
 
 # Create models and feature selections in one file instead of each Notebook
 
-def dosomething(kind,title,df,features,what,best_params={}):
+def dosomething(kind,title,df,features,target,best_params={}):
 
     num_features_to_select = len(features)-1
     random_state_value = 42
@@ -41,9 +41,12 @@ def dosomething(kind,title,df,features,what,best_params={}):
             estimator = Ridge(**best_params)
     
     X = df[features]
-    y = df[what]
+    y = df[target]
     
-    if title != "" and title != "PolynomialFeatures" and title.find("Best Params") == -1:
+    feature_selections = ["Recursive Feature Elimination", "Sequential Feature Selector", "Select From Model"]
+    #if title != "" and title != "PolynomialFeatures" and title.find("Best Params") == -1:
+
+    if title in feature_selections:
         match title:
             case "Recursive Feature Elimination":
                 something = RFE(estimator, n_features_to_select=num_features_to_select)
@@ -57,7 +60,7 @@ def dosomething(kind,title,df,features,what,best_params={}):
         print('The selected features are:', list(X.columns[something_selected_features]))
 
         X = df[list(X.columns[something_selected_features])]
-        y = df[what]
+        y = df[target]
     elif title == "PolynomialFeatures":
         estimator = Pipeline([
             ('poly_features', PolynomialFeatures()), 
