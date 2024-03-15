@@ -1,6 +1,7 @@
 
 from print_more_stuff import print_more_stuff
 
+import numpy as np
 from sklearn.ensemble import AdaBoostRegressor, GradientBoostingRegressor, HistGradientBoostingRegressor, RandomForestRegressor
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.neighbors import KNeighborsRegressor
@@ -57,8 +58,13 @@ def dosomething(kind,title,df,features,target,best_params={}):
                 
         something.fit(X, y)
         something_selected_features = something.get_support()
-        print('The selected features are:', list(X.columns[something_selected_features]))
+        if True not in something_selected_features:
+            howmany = len(something_selected_features)
+            alltrue = np.empty(howmany, dtype=bool)
+            alltrue.fill(True)
+            something_selected_features = alltrue
 
+        print('The selected features are:', list(X.columns[something_selected_features]))
         X = df[list(X.columns[something_selected_features])]
         y = df[target]
     elif title == "PolynomialFeatures":
