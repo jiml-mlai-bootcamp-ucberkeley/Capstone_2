@@ -277,6 +277,8 @@ Wyoming               1<br/>
 <tr><td></td><td>Sequential Feature Selector</td></tr>
 </table>
 
+#### In the majority of cases, using R2 score Gradient Boosting and Hist Gradient Boosting performed the best.
+#### Other models and feature selections perormed well and could probably be tweaked to outperform the Boosting models.
 
 
 ## Insights
@@ -294,7 +296,7 @@ Wyoming               1<br/>
 #### The dataset used here does not provide specific addresses which would be needed for optimal micro level analysis.
 #### Also, the other features bed, bath, acre lot, and house size can significantly impact the price.
 #### Age of the house is missing from the data.  That is also very important.
-
+#### I would also recommend additional techniques for data cleansing.  Outlier detection could be better too.
 
 ## Link to notebook
 ### https://github.com/jiml-mlai-bootcamp-ucberkeley/Capstone_1
