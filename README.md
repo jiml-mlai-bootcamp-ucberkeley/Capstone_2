@@ -198,7 +198,7 @@ Wyoming               1<br/>
 
 
 
-#### File names with out "Minor" provide micro level (zip code level) analysis for the location with the most houses.
+#### File names with "Minor" provide micro level (zip code level) analysis for the location with the most houses.
 ##### This approach worked well for NJ and NY, but not Connecticut, Massachusetts, and Pennsylvania.
 ##### There weren't sufficient number of houses in the latter 3 states to generate acceptable predictions and results.
 ##### Here is a sample of micro level analysis from NY.
@@ -287,7 +287,7 @@ Wyoming               1<br/>
 #### The data for some states works well at a macro level, but insufficient for micro level analysis.
 #### The latitude and longitude values that were added gave better results than using zip code or county.
 #### A data source that provides the Latitude and Longitude for zip codes in the US was used for this purpose.
-#### KMeans helped to cluster the houses and put them in the correct geographic locations.
+#### KMeans helped to cluster the houses and group them into geographic locations.
 ##### US zip codes with lat and long  https://www.kaggle.com/datasets/joeleichter/us-zip-codes-with-lat-and-long
 
 ## Next steps and recommendations
@@ -299,4 +299,4 @@ Wyoming               1<br/>
 #### I would also recommend additional techniques for data cleansing.  Outlier detection could be better too.
 
 ## Link to notebook
-### https://github.com/jiml-mlai-bootcamp-ucberkeley/Capstone_1
+### https://github.com/jiml-mlai-bootcamp-ucberkeley/Capstone_2
