@@ -48,7 +48,7 @@
 
 #### For the purpose of this project a macro level analysis will be conducted at the state level for Connecticut, Massachusetts, NJ, NY, and Pennsylvania.
 #### The initial count of houses in each state indicate a sufficient number to provide an adequate range.
-#### However after removing duplicate entries this may prove to be a bigger challenge when we try micro level analysis.  But we will continue with this approach for Capstone 1.
+#### However after removing duplicate entries this may prove to be a bigger challenge when we try micro level analysis.  But we will continue with this approach for Capstone 2.
 <table>
 <tr>
 <th>Before removing duplicates</th>
