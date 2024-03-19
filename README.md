@@ -119,7 +119,7 @@ Wyoming               1<br/>
     <ul>
         <ol>For consistency sake, all of the models we run using normlized data.</ol>
         <ol>Some of the models and feature selection techniques did not handle this well.</ol>
-        <ol>Further exploration of this issue would be intersting.</ol>
+        <ol>Further exploration of this issue should prove to be intersting.</ol>
     </ul>
 </li>
 </ul>
