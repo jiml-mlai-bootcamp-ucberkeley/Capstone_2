@@ -112,7 +112,8 @@ Wyoming               1<br/>
   </li>
   <li>The price feature also appears to be too wide and could use some attention.
       <ul>
-          <li>Whiskers and Zscore can help identify outliers.  After reviewing the results, Zscore appears to be the better option.</li>
+          <li>Whiskers and Zscore can help identify outliers.</li>
+          <li>After reviewing the results, Zscore appears to be the better option.</li>
       </ul>
   </li>
   <li>Missing values for the bed, bath, acre_lot, and house_size have been replaced with mode().</li>
@@ -133,7 +134,8 @@ Wyoming               1<br/>
   <ul><li>The rows for only the past few years will be used, generally after 2015.</li></ul></li>
   <li>The price feature also appears to be too wide and could use some attention.
     <ul>
-      <li>Whiskers and Zscore can help identify outliers.  After reviewing the results, Zscore appears to be the beter option.</li>
+      <li>Whiskers and Zscore can help identify outliers.</li>
+      <li>After reviewing the results, Zscore appears to be the beter option.</li>
     </ul>
   </li>
   <li>Missing values for the bed, bath, acre_lot, and house_size have been replaced with mode().</li>
