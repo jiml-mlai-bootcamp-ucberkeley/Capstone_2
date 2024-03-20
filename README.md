@@ -105,36 +105,40 @@ Wyoming               1<br/>
 #### Improving the Model
 
 <ul>
-<li>The range of values for the prev_sold_date feature is too wide and too far into the past for practical purposes.
-<ul><ol>The rows for only the past few years will be used, generally after 2015.</ol></ul></li>
-<li>The price feature also appears to be too wide and could use some attention.
+  <li>The range of values for the prev_sold_date feature is too wide and too far into the past for practical purposes.
     <ul>
-        <ol>Whiskers and Zscore can help identify outliers.  After reviewing the results, Zscore appears to be the better option.
-        </ol>
+      <li>The rows for only the past few years will be used, generally after 2015.</li>
     </ul>
-</li>
-<li>Missing values for the bed, bath, acre_lot, and house_size have been replaced with mode().</li>
-<li>Rows with other missing values will removed.</li>
-<li>Normalizing the data was explored in this project.
-    <ul>
-        <ol>For consistency sake, all of the models we run using normlized data.</ol>
-        <ol>Some of the models and feature selection techniques did not handle this well.</ol>
-        <ol>Further exploration of this issue should prove to be intersting.</ol>
-    </ul>
-</li>
+  </li>
+  <li>The price feature also appears to be too wide and could use some attention.
+      <ul>
+          <li>Whiskers and Zscore can help identify outliers.  After reviewing the results, Zscore appears to be the better option.</li>
+      </ul>
+  </li>
+  <li>Missing values for the bed, bath, acre_lot, and house_size have been replaced with mode().</li>
+  <li>Rows with other missing values will removed.</li>
+  <li>Normalizing the data was explored in this project.
+      <ul>
+          <li>For consistency sake, all of the models we run using normlized data.</li>
+          <li>Some of the models and feature selection techniques did not handle this well.</li>
+          <li>Further exploration of this issue should prove to be intersting.</li>
+      </ul>
+  </li>
 </ul>
 
 #### Improving the Model
 
 <ul>
-<li>The range of values for the prev_sold_date feature is too wide and too far into the past for practical purposes.
-<ul><ol>The rows for only the past few years will be used, generally after 2015.</ol></ul></li>
-<li>The price feature also appears to be too wide and could use some attention.
-<ul><ol>Whiskers and Zscore can help identify outliers.  After reviewing the results, Zscore appears to be the beter option.
-</ol></ul></li>
-<li>Missing values for the bed, bath, acre_lot, and house_size have been replaced with mode().</li>
-<li>Rows with other missing values will removed.</li>
-<li>Normalizing the data values will be explored for Capstone 2.</li>
+  <li>The range of values for the prev_sold_date feature is too wide and too far into the past for practical purposes.
+  <ul><li>The rows for only the past few years will be used, generally after 2015.</li></ul></li>
+  <li>The price feature also appears to be too wide and could use some attention.
+    <ul>
+      <li>Whiskers and Zscore can help identify outliers.  After reviewing the results, Zscore appears to be the beter option.</li>
+    </ul>
+  </li>
+  <li>Missing values for the bed, bath, acre_lot, and house_size have been replaced with mode().</li>
+  <li>Rows with other missing values will removed.</li>
+  <li>Normalizing the data values will be explored for Capstone 2.</li>
 </ul>
 
 #### Here are samples of graphs for NJ.
