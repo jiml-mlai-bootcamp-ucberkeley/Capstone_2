@@ -268,7 +268,7 @@ Wyoming               1<br/>
 </table>
 
 #### In the majority of cases, using R2 score Gradient Boosting and Hist Gradient Boosting performed the best.
-#### Other models and feature selections perormed well and could probably be tweaked to outperform the Boosting models.
+#### Other models and feature selections performed well and could probably be tweaked to outperform the Boosting models.
 
 
 ## Insights
