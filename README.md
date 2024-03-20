@@ -127,22 +127,6 @@ Wyoming               1<br/>
   </li>
 </ul>
 
-#### Improving the Model
-
-<ul>
-  <li>The range of values for the prev_sold_date feature is too wide and too far into the past for practical purposes.
-  <ul><li>The rows for only the past few years will be used, generally after 2015.</li></ul></li>
-  <li>The price feature also appears to be too wide and could use some attention.
-    <ul>
-      <li>Whiskers and Zscore can help identify outliers.</li>
-      <li>After reviewing the results, Zscore appears to be the beter option.</li>
-    </ul>
-  </li>
-  <li>Missing values for the bed, bath, acre_lot, and house_size have been replaced with mode().</li>
-  <li>Rows with other missing values will removed.</li>
-  <li>Normalizing the data values will be explored for Capstone 2.</li>
-</ul>
-
 #### Here are samples of graphs for NJ.
 #### House prices before ZScore
 <img src="images/nj-prices-before-zscore.png">
