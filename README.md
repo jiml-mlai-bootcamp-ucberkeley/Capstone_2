@@ -109,7 +109,7 @@ Wyoming               1<br/>
 <ul><ol>The rows for only the past few years will be used, generally after 2015.</ol></ul></li>
 <li>The price feature also appears to be too wide and could use some attention.
     <ul>
-        <ol>Whiskers and Zscore can help identify outliers.  After reviewing the results, Zscore appears to be the beter option.
+        <ol>Whiskers and Zscore can help identify outliers.  After reviewing the results, Zscore appears to be the better option.
         </ol>
     </ul>
 </li>
